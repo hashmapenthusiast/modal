@@ -9,8 +9,10 @@ function triggerModal(){
         e.path[1].remove()
     })
 
+    modal.id = 'modal'
     p.textContent = 'hi there'
     closeButton.textContent = 'close'
+    closeButton.id='close';
     modal.appendChild(p)
     modal.appendChild(closeButton)
     document.body.appendChild(modal)
